@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jaykang Heo — Backend Engineer</title>
+  <meta name="description" content="Jaykang Heo is a backend engineer focused on Kotlin, Java, Spring, APIs, distributed systems, search, and content platforms." />
+  <meta property="og:title" content="Jaykang Heo — Backend Engineer" />
+  <meta property="og:description" content="Backend engineer focused on Kotlin, Spring, production APIs, search/content workflows, and reliable systems." />
+  <meta property="og:type" content="website" />
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f7f8fb;
+      --panel: #ffffff;
+      --text: #111827;
+      --muted: #5f6b7a;
+      --line: #e5e7eb;
+      --accent: #1d4ed8;
+      --accent-soft: #eaf1ff;
+      --shadow: 0 24px 70px rgba(17, 24, 39, 0.08);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top left, #eef4ff 0, var(--bg) 34rem);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .page { max-width: 1040px; margin: 0 auto; padding: 56px 24px 72px; }
+    .hero {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      padding: 48px;
+      box-shadow: var(--shadow);
+    }
+    .eyebrow { color: var(--accent); font-weight: 700; letter-spacing: .08em; text-transform: uppercase; font-size: 13px; }
+    h1 { font-size: clamp(42px, 7vw, 76px); line-height: .96; margin: 18px 0 22px; letter-spacing: -0.06em; }
+    .lead { font-size: clamp(18px, 2.2vw, 23px); max-width: 820px; color: #334155; margin: 0; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0 18px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--text);
+      font-weight: 650;
+    }
+    .button.primary { background: var(--text); color: #fff; border-color: var(--text); }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 28px; }
+    .card {
+      background: rgba(255,255,255,.86);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 24px;
+    }
+    .card h2, .card h3 { margin: 0 0 12px; letter-spacing: -0.03em; line-height: 1.2; }
+    .card p { margin: 0; color: var(--muted); }
+    .wide { grid-column: span 2; }
+    .stack { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+    .tag { border-radius: 999px; padding: 6px 10px; background: var(--accent-soft); color: #1e3a8a; font-weight: 650; font-size: 13px; }
+    .timeline { display: grid; gap: 16px; }
+    .role { padding-top: 16px; border-top: 1px solid var(--line); }
+    .role:first-child { padding-top: 0; border-top: 0; }
+    .role strong { display: block; font-size: 17px; }
+    .role span { color: var(--muted); }
+    footer { color: var(--muted); margin-top: 34px; font-size: 14px; }
+    @media (max-width: 820px) {
+      .page { padding: 28px 16px 56px; }
+      .hero { padding: 30px 22px; border-radius: 22px; }
+      .grid { grid-template-columns: 1fr; }
+      .wide { grid-column: auto; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <div class="eyebrow">Backend Engineer · Seoul</div>
+      <h1>Jaykang Heo</h1>
+      <p class="lead">I build production backend systems for healthcare, education, content, and search platforms. My work centers on Kotlin/Java, Spring, APIs, data-backed services, search/content workflows, and reliable system behavior.</p>
+      <div class="actions">
+        <a class="button primary" href="https://www.linkedin.com/in/jaykang-heo-3b7547172/">LinkedIn</a>
+        <a class="button" href="https://github.com/jaykang-heo">GitHub</a>
+      </div>
+    </section>
+
+    <section class="grid" aria-label="Profile summary">
+      <article class="card wide">
+        <h2>Production backend focus</h2>
+        <p>I work best on scoped backend problems where reliability, maintainability, debugging, clean APIs, and practical system design matter. Most of my meaningful production work lives in company or organization repositories rather than public toy projects.</p>
+        <div class="stack" aria-label="Skills">
+          <span class="tag">Kotlin</span><span class="tag">Java</span><span class="tag">Spring</span><span class="tag">PostgreSQL</span><span class="tag">Redis</span><span class="tag">OpenSearch</span><span class="tag">gRPC</span><span class="tag">S3</span><span class="tag">Debugging</span><span class="tag">Code Review</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3>How I work</h3>
+        <p>Clear interfaces, predictable data flows, careful refactoring, pragmatic documentation, and production-minded tradeoffs.</p>
+      </article>
+
+      <article class="card wide">
+        <h2>Experience</h2>
+        <div class="timeline">
+          <div class="role">
+            <strong>Healingpaper / Gangnam Unni</strong>
+            <span>Backend services for a healthcare marketplace platform: APIs, domain logic, data workflows, reliability, debugging, and maintainability.</span>
+          </div>
+          <div class="role">
+            <strong>Riiid</strong>
+            <span>Content/search and learning-platform backend services for Santa TOEIC and related education products, including service integration and global rollout work.</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3>Current direction</h3>
+        <p>Backend/platform work around product systems, search/content platforms, and maintainable service architecture.</p>
+      </article>
+    </section>
+
+    <footer>
+      Last updated 2026. This page is intentionally concise: a professional entry point, not a catalog of old practice repositories.
+    </footer>
+  </main>
+</body>
+</html>
+
