@@ -52,7 +52,7 @@
     nav { display: flex; gap: 18px; flex-wrap: wrap; font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 14px; }
     .intro {
       display: grid;
-      grid-template-columns: 1.6fr .9fr;
+      grid-template-columns: minmax(0, 1.35fr) minmax(180px, 230px) minmax(0, .9fr);
       gap: 44px;
       align-items: start;
       margin-bottom: 58px;
@@ -62,6 +62,30 @@
       font-size: clamp(24px, 3.2vw, 37px);
       line-height: 1.14;
       letter-spacing: -0.035em;
+    }
+    .portrait {
+      margin: 0;
+      align-self: start;
+      border: 1px solid var(--line);
+      border-radius: 30px;
+      padding: 10px;
+      background: rgba(255, 253, 248, .7);
+      box-shadow: 0 20px 60px rgba(45, 43, 39, .08);
+    }
+    .portrait img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      border-radius: 22px;
+      filter: grayscale(1) sepia(.08) contrast(.96) brightness(1.03);
+    }
+    .portrait figcaption {
+      margin-top: 10px;
+      color: var(--muted);
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-size: 13px;
+      text-align: center;
     }
     .meta {
       border-left: 1px solid var(--line);
@@ -140,6 +164,10 @@
           <p>I build production backend systems for healthcare marketplace and education products.</p>
           <p>Currently at Healingpaper / Gangnam Unni. Previously at Riiid.</p>
         </div>
+        <figure class="portrait">
+          <img src="https://avatars.githubusercontent.com/u/37462526?v=4" alt="Portrait of Jaykang Heo" loading="eager" />
+          <figcaption>Backend Engineer · Seoul</figcaption>
+        </figure>
         <aside class="meta" aria-label="Profile summary">
           <strong>Focus</strong>
           APIs, domain logic, data workflows, search/content platforms, reliability, and maintainable service design.
